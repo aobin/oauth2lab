@@ -22,6 +22,8 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
     public JwtAccessTokenConverter accessTokenConverter() {
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
         converter.setSigningKey("test-secret");
+
+
         return converter;
     }
 
